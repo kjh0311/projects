@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+
+
+	<include layout = "@layout/tab2_04test_view_day"
+	         android:id = "@+id/test_view_day"/>
+
+	<include layout = "@layout/tab2_05test_view_start_time_and_save_button"
+	         android:id = "@+id/test_view_start_time_and_save_button"/>
+
+	<include layout = "@layout/tab2_06test_view_end_time"
+	         android:id = "@+id/test_view_end_time"/>
+
+	<include layout = "@layout/tab2_08test_view_exercise_info"
+	         android:id = "@+id/test_view_exercise_info"/>
+
+
+
+</LinearLayout>

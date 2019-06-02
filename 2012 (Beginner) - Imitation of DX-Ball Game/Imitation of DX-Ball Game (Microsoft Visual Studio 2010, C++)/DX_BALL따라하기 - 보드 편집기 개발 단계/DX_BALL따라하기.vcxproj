@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName />
+    <SccLocalPath />
+    <ProjectGuid>{EF356D1D-B65E-C2D0-A8CE-11C12D9416FD}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Debug\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Debug\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\Debug\DX_BALL따라하기.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\Debug\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Debug\DX_BALL따라하기.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug\DX_BALL따라하기.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>.\Debug\DX_BALL따라하기.exe</OutputFile>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;Msimg32.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Release\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\Release\DX_BALL따라하기.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Release\DX_BALL따라하기.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release\DX_BALL따라하기.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>.\Release\DX_BALL따라하기.exe</OutputFile>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="DX_BALL따라하기.CPP" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BallStruct.h" />
+    <ClInclude Include="Definition.h" />
+    <ClInclude Include="Dlg.h" />
+    <ClInclude Include="Draw.h" />
+    <ClInclude Include="DrawBitmap.h" />
+    <ClInclude Include="DrawBitmapRC.h" />
+    <ClInclude Include="DrawBitmapRCPrev.h" />
+    <ClInclude Include="InitCS.h" />
+    <ClInclude Include="InitializeGame.h" />
+    <ClInclude Include="InnerAction.h" />
+    <ClInclude Include="ItemAction.h" />
+    <ClInclude Include="LinkedList.h" />
+    <ClInclude Include="LoadGraphic.h" />
+    <ClInclude Include="LoadItem.h" />
+    <ClInclude Include="OnCommand.h" />
+    <ClInclude Include="OnCreate.h" />
+    <ClInclude Include="OnSizing.h" />
+    <ClInclude Include="ShootingStruct.h" />
+    <ClInclude Include="Sound.h" />
+    <ClInclude Include="TransBlt.h" />
+    <ClInclude Include="WindowSize.h" />
+    <ClInclude Include="WndProc.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Bar.bmp" />
+    <CustomBuild Include="ItemsImage\BigBall(Item).bmp" />
+    <CustomBuild Include="bomb.bmp" />
+    <CustomBuild Include="brick1.bmp" />
+    <CustomBuild Include="brick2.bmp" />
+    <CustomBuild Include="brick3.bmp" />
+    <CustomBuild Include="brick4.bmp" />
+    <CustomBuild Include="ItemsImage\EightBall.bmp" />
+    <CustomBuild Include="ItemsImage\EmptyItem.bmp" />
+    <CustomBuild Include="ItemsImage\ExpandPaddle.bmp" />
+    <CustomBuild Include="ItemsImage\ExtraEnergy.bmp" />
+    <CustomBuild Include="ItemsImage\ExtraLife.bmp" />
+    <CustomBuild Include="ItemsImage\FallingBrick.bmp" />
+    <CustomBuild Include="ItemsImage\FasterBall.bmp" />
+    <CustomBuild Include="ItemsImage\FireBall(Item).bmp" />
+    <CustomBuild Include="UnitImage\FireBall.bmp" />
+    <CustomBuild Include="GameOver.bmp" />
+    <CustomBuild Include="GamePaused.bmp" />
+    <CustomBuild Include="Grab.bmp" />
+    <CustomBuild Include="UnitImage\GrabLaser.bmp" />
+    <CustomBuild Include="ItemsImage\GrabPaddle(Item).bmp" />
+    <CustomBuild Include="UnitImage\GrabPaddle.bmp" />
+    <CustomBuild Include="icon1.ico" />
+    <CustomBuild Include="UnitImage\Laser.bmp" />
+    <CustomBuild Include="LeftPipe.bmp" />
+    <CustomBuild Include="ItemsImage\MiniBall.bmp" />
+    <CustomBuild Include="UnitImage\PierceBall.bmp" />
+    <CustomBuild Include="RightPipe.bmp" />
+    <CustomBuild Include="ItemsImage\ShootingPaddle(Item).bmp" />
+    <CustomBuild Include="UnitImage\ShootingPaddle.bmp" />
+    <CustomBuild Include="ItemsImage\ShrinkPaddle.bmp" />
+    <CustomBuild Include="ItemsImage\SlowerBall.bmp" />
+    <CustomBuild Include="ItemsImage\SplitBall.bmp" />
+    <CustomBuild Include="ItemsImage\ThruBrick.bmp" />
+    <CustomBuild Include="ItemsImage\UppingBrick.bmp" />
+    <CustomBuild Include="~ic591570.ico" />
+    <CustomBuild Include="게임시작.bmp" />
+    <CustomBuild Include="보통공.bmp" />
+    <CustomBuild Include="아이콘.bmp" />
+    <CustomBuild Include="Sound\Bang.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Sound\Byeball.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Sound\Danger.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Sound\Expand.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Sound\Grab.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Sound\Gunfire.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Sound\Item.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Sound\LifeUp.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Padexplo.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Sweepdow.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Swordswi.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Sound\Warn.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Wowpulse.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Script.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

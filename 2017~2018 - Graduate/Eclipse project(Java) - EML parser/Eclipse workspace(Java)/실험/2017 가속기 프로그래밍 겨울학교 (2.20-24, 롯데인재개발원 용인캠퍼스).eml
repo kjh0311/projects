@@ -1,0 +1,74 @@
+Received: (qmail 25694 invoked from network); 8 Feb 2017 01:42:02 -0000
+Received: from 10.114.49.213 (HELO crcvmail11.nm.naver.com) (10.114.49.213)
+  by cmda011-2.nm.naver.com with SMTP; 8 Feb 2017 01:42:02 -0000
+Authentication-Results: mx.naver.com;
+  spf=pass (mx.naver.com: domain of outgoing@kiise.or.kr designates 211.40.221.203 as permitted sender) smtp.mailfrom=outgoing@kiise.or.kr
+X-Session-IP: 211.40.221.203
+Received: from mailsmtp3.hosting.bora.net (mailsmtp3.bora.net [211.40.221.203])
+  by crcvmail11.nm.naver.com with ESMTP id -1-kTiKsQDC-xayDbmGJNw
+  for <doskid2@naver.com>;
+  Wed, 08 Feb 2017 01:42:02 -0000
+Received: (qmail 20475 invoked from network); Wed, 8 Feb 2017 10:41:58 +0900 (KST)
+Received: from unknown (HELO kiise.or.kr) (1.221.46.243)
+  by mailsmtp2.bora.net with SMTP; Wed, 8 Feb 2017 10:41:58 +0900 (KST)
+Reply-To: "한국정보과학회" <outgoing@kiise.or.kr>
+From: "한국정보과학회" <outgoing@kiise.or.kr>
+To: doskid2@naver.com
+Subject: =?euc-kr?B?MjAxNyCwobzTseIgx8G3zrHXt6G51iCw3L/vx9CxsyAoMi4yMC0yNCwgt9S1pcDOwOews7nfv/ggv+vAzsS3xtu9uik=?=
+X-Mailer: GNSOFT Mailer Biz 6.7
+Mime-Version: 1.0
+Date: Wed, 08 Feb 2017 10:41:59 +0900
+Content-Type: text/html;
+	charset="euc-kr"
+Content-Transfer-Encoding: 8bit
+X-Naver-ESV: +9FYpB3G1H+YbXFCbHmRKAudKogZjJ+Y
+
+<HTML lang=en><HEAD><TITLE>2017 가속기 프로그래밍 겨울학교</TITLE>
+<META content="text/html; charset=utf-8" http-equiv=Content-Type></HEAD>
+<BODY >
+<TABLE cellSpacing=0 cellPadding=0 width=637 align=left border=0>
+<TBODY>
+<TR><!--head-->
+<TD style="BORDER-TOP: #cccccc 1px solid; BORDER-RIGHT: #cccccc 1px solid; BORDER-LEFT: #cccccc 1px solid"><IMG border=0 src="http://drive.google.com/uc?id=0B6_EtFX1xUwJcVJNMlFfLUhndnM" width=637 height=70 useMap=#maphead> </TD></TR>
+<TR><!--contents-->
+<TD style="BORDER-RIGHT: #cccccc 1px solid; PADDING-BOTTOM: 15px; PADDING-TOP: 15px; PADDING-LEFT: 5px; BORDER-LEFT: #cccccc 1px solid; PADDING-RIGHT: 5px" vAlign=top>
+<P style="MARGIN-BOTTOM: 0px; TEXT-ALIGN: center; MARGIN-TOP: 0px"><SPAN style="FONT-SIZE: 17pt; LINE-HEIGHT: 150%"><FONT color=#000000 face="맑은 고딕"><B>2017 가속기 프로그래밍 겨울학교</B></FONT></SPAN></P>
+<P style="MARGIN-BOTTOM: 0px; MARGIN-TOP: 0px"><SPAN style="FONT-SIZE: 8pt; LINE-HEIGHT: 150%"><FONT color=#000000 face="맑은 고딕">&nbsp;</FONT></SPAN></P>
+<TABLE align=center>
+<TBODY>
+<TR>
+<TD style="PADDING-BOTTOM: 15px; PADDING-TOP: 15px; PADDING-LEFT: 15px; PADDING-RIGHT: 15px" bgColor=#eeeeee width=600>
+<P style="MARGIN-BOTTOM: 0px; TEXT-ALIGN: justify; MARGIN-TOP: 0px"><SPAN style="FONT-SIZE: 10pt; LINE-HEIGHT: 150%"><FONT color=#000000 face="맑은 고딕">GPU 및 FPGA 등의 성능 가속기(accelerator)는 범용 멀티코어 CPU와 함께 하나의 시스템을 구성하여 이종 컴퓨팅(heterogeneous computing) 환경을 제공합니다. 고성능 컴퓨팅과 모바일 컴퓨팅에서 성능 가속기의 사용이 늘어감에 따라 이종 컴퓨팅 환경에서 성능 가속 컴퓨팅(accelerator computing)이 최근에 각광을 받고 있습니다. 하지만 성능 가속기를 효과적으로 사용하려면 쉽지 않은 프로그래밍 장벽이 존재합니다. 이번 겨울학교에서는 대표적인 성능 가속기인 GPU의 구조와 코드 이식성이 좋은 OpenCL을 사용하여 GPU를 프로그래밍하는 방법에 대하여 배웁니다. 또, OpenCL과 흡사한 CUDA 언어의 사용법을 배우고, GPU 코드의 최적화 기법에 대해 배웁니다. 이 겨울학교가 국내에서 이종 컴퓨팅의 중요성을 인식하는 계기가 되고, 이종 컴퓨팅의 저변확대에 도움이 되기를 바랍니다.</FONT></SPAN></P>
+<P style="MARGIN-BOTTOM: 0px; TEXT-ALIGN: justify; MARGIN-TOP: 0px"><SPAN style="FONT-SIZE: 10pt; LINE-HEIGHT: 150%"><FONT color=#000000 face="맑은 고딕">&nbsp;</FONT></SPAN></P>
+<P style="MARGIN-BOTTOM: 0px; TEXT-ALIGN: right; MARGIN-TOP: 0px"><SPAN style="FONT-SIZE: 10pt; LINE-HEIGHT: 150%"><FONT color=#808080 face="맑은 고딕">- 겨울학교장 이재진 교수(서울대)</FONT></SPAN></P></TD></TR></TBODY></TABLE>
+<P style="MARGIN-BOTTOM: 0px; TEXT-ALIGN: justify; MARGIN-TOP: 0px"><SPAN style="FONT-SIZE: 10pt; LINE-HEIGHT: 160%"><FONT face="맑은 고딕">
+<UL>
+<LI><STRONG>일시:</STRONG> 2월 20일(월) 오후 12시 ~ 2월 24일(금) 오후 3시 30분 
+<LI><STRONG>장소:</STRONG> <A style="TEXT-DECORATION: none" href="http://www.lotteacademy.co.kr/use_guide/yongin_map.jsp"><SPAN style="FONT-SIZE: 10pt; LINE-HEIGHT: 150%"><FONT color=#0088cc face="맑은 고딕">롯데인재개발원 용인캠퍼스</FONT></SPAN></A><SPAN style="FONT-SIZE: 9pt; LINE-HEIGHT: 150%"><FONT color=#808080 face="맑은 고딕">(경기도 용인시 기흥구 마북로240번길 17-9)</FONT></SPAN> 
+<UL>
+<LI>교육 기간 중 2인 1실의 숙소가 제공됩니다. </LI></UL>
+<LI><STRONG>주최:</STRONG> <SPAN style="FONT-SIZE: 10pt; LINE-HEIGHT: 150%"><FONT color=#0088cc face="맑은 고딕">초고성능컴퓨팅연구단, 서울대학교 매니코어 프로그래밍 연구단</FONT></SPAN><BR>
+<LI><STRONG>주관:</STRONG> <SPAN style="FONT-SIZE: 10pt; LINE-HEIGHT: 150%"><FONT color=#0088cc face="맑은 고딕">매니코어소프트(주)</FONT></SPAN> 
+<LI><STRONG>프로그램:</STRONG> 4박 5일간의 이론 및 실습 수업과 외부 강연, 팀 프로젝트로 구성됩니다. 성능 가속기의 원리와 구조, 그리고 OpenCL 및 CUDA 프로그래밍에 대한 깊이 있는 수업을 통해 성능 가속 컴퓨팅의 탄탄한 기본기를 익히도록 합니다. 
+<LI><STRONG>실습 환경:</STRONG> 슈퍼컴퓨터 '<A style="TEXT-DECORATION: none" href="http://aces.snu.ac.kr/chundoong/"><SPAN style="FONT-SIZE: 10pt; LINE-HEIGHT: 150%"><FONT color=#0088cc face="맑은 고딕">천둥</FONT></SPAN></A>'(2012년 11월 세계 슈퍼컴퓨터 Top500 리스트에서 277위, Green500 리스트에서 32위 등재)을 이용한 프로그래밍 실습 환경을 제공합니다. 
+<LI><STRONG>등록비:</STRONG> 일반 120만원, 학생 60만원<SPAN style="FONT-SIZE: 9pt; LINE-HEIGHT: 150%"><FONT color=#808080 face="맑은 고딕">(교육 기간 중의 숙박비 및 식비가 모두 포함됩니다.)</FONT></SPAN> </LI></UL></FONT></SPAN>
+<P></P>
+<P style="MARGIN-BOTTOM: 0px; MARGIN-TOP: 0px"><SPAN style="FONT-SIZE: 8pt; LINE-HEIGHT: 150%"><FONT color=#000000 face="맑은 고딕">&nbsp;</FONT></SPAN></P>
+<P style="MARGIN-BOTTOM: 0px; TEXT-ALIGN: center; MARGIN-TOP: 0px"><SPAN style="FONT-SIZE: 10pt; LINE-HEIGHT: 200%"><FONT color=#000000 face="맑은 고딕"><B>홈페이지에서 자세한 내용을 확인하고 등록하세요!</B></FONT></SPAN></P>
+<P style="MARGIN-BOTTOM: 0px; MARGIN-TOP: 0px"><SPAN style="FONT-SIZE: 8pt; LINE-HEIGHT: 150%"><FONT color=#000000 face="맑은 고딕">&nbsp;</FONT></SPAN></P>
+<TABLE align=center>
+<TBODY>
+<TR>
+<TD style="PADDING-BOTTOM: 5px; PADDING-TOP: 5px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px" bgColor=#006dcc width=150>
+<P style="MARGIN-BOTTOM: 0px; TEXT-ALIGN: center; MARGIN-TOP: 0px"><A style="TEXT-DECORATION: none" href="http://www.manycoresoft.co.kr/apws17" target=_blank><SPAN style="FONT-SIZE: 14pt; LINE-HEIGHT: 160%"><FONT color=#ffffff face="맑은 고딕">홈페이지 가기</FONT></SPAN></A></P></TD></TR></TBODY></TABLE>
+<P style="MARGIN-BOTTOM: 0px; MARGIN-TOP: 0px"><SPAN style="FONT-SIZE: 8pt; LINE-HEIGHT: 150%"><FONT color=#000000 face="맑은 고딕">&nbsp;</FONT></SPAN></P>
+<HR style="BORDER-TOP: 1px; BORDER-BOTTOM: #ffffff 1px solid; MARGIN: 10px 0px; dotted: #cccccc">
+
+<P style="MARGIN-BOTTOM: 0px; TEXT-ALIGN: justify; MARGIN-TOP: 0px"><SPAN style="FONT-SIZE: 9pt; LINE-HEIGHT: 150%"><FONT color=#000000 face="맑은 고딕">교육 관련 문의: <A style="TEXT-DECORATION: none" href="mailto:scss15@manycoresoft.co.kr"><SPAN style="FONT-SIZE: 9pt; LINE-HEIGHT: 150%"><FONT color=#0088cc face="맑은 고딕"><A style="COLOR: #0088cc; face: 맑은 고딕" href="mailto:education@manycoresoft.co.kr">education@manycoresoft.co.kr</A></FONT></SPAN></A><BR>Copyright ⓒ 2017 Center for Manycore Programming / ManyCoreSoft</FONT></SPAN></P></TD></TR>
+<TR><!--contents-->
+<TD style="BORDER-RIGHT: #cccccc 1px solid; PADDING-BOTTOM: 5px; PADDING-TOP: 5px; PADDING-LEFT: 5px; BORDER-LEFT: #cccccc 1px solid; PADDING-RIGHT: 5px" vAlign=top>
+<P align=right><SPAN style="FONT-SIZE: 9pt"><FONT color=#c00000>[협찬메일입니다]</FONT></SPAN></P></TD></TR>
+<TR><!--foot-->
+<TD style="BORDER-TOP: #cccccc 1px solid; BORDER-RIGHT: #cccccc 1px solid; BORDER-BOTTOM: #cccccc 1px solid; BORDER-LEFT: #cccccc 1px solid"><IMG border=0 src="http://drive.google.com/uc?id=0B6_EtFX1xUwJU0hFd2QxUXRCWHc" width=637 height=70 useMap=#mapfoot> </TD></TR></TBODY></TABLE><MAP name=maphead><AREA href="http://www.kiise.or.kr/" shape=Rect target=_blank coords="487, 41, 634, 63"></MAP><MAP name=mapfoot><AREA href="http://www.kiise.or.kr/" shape=Rect target=_blank coords="4, 9, 126, 33"><AREA href="mailto:kiise@kiise.or.kr" shape=Rect coords="458, 23, 557, 40"><AREA href="mailto:hschoi@kiise.or.kr" shape=Rect coords="467, 52, 524, 69"></MAP></BODY></HTML>
+
+

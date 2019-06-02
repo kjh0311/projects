@@ -1,0 +1,32 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+    android:id="@+id/activity_main"
+	tools:context="kjh.running_machine_exercise_infomation_shower.MainActivity">
+
+	<!-- 탭이 더 위에 있어야 함 -->
+	<kjh_custom_tabs.KJH_CustomTabs
+		android:id ="@+id/tabs"
+		android:layout_width ="match_parent"
+		android:layout_height ="wrap_content"
+		/>
+
+	<!--
+	ViewPager 의 레이아웃 속성은 다음과 같아야 한다.
+		android:layout_width="match_parent"
+		android:layout_height="0px"
+		android:layout_weight="1"
+	-->
+
+
+	<android.support.v4.view.ViewPager
+		android:id="@+id/container"
+		android:layout_width="match_parent"
+		android:layout_height="0px"
+		android:layout_weight="1"
+		/>
+
+</LinearLayout>

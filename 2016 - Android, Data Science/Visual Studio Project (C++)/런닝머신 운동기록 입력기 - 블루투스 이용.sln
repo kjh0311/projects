@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "런닝머신 운동기록 입력기 - 블루투스 이용", "런닝머신 운동기록 입력기 - 블루투스 이용\런닝머신 운동기록 입력기 - 블루투스 이용.vcxproj", "{A024CF0B-5921-42E9-9AD3-A8C01733AECC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A024CF0B-5921-42E9-9AD3-A8C01733AECC}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A024CF0B-5921-42E9-9AD3-A8C01733AECC}.Debug|Win32.Build.0 = Debug|Win32
+		{A024CF0B-5921-42E9-9AD3-A8C01733AECC}.Release|Win32.ActiveCfg = Release|Win32
+		{A024CF0B-5921-42E9-9AD3-A8C01733AECC}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="D:\연구자료 보관소\2018년\4월 EML\26 eml\극지 데이터 관련 자바 프로젝트\javamail-1.5.6-src.zip"/>
+	</list>
+	<section name="CleanDialogSettings">
+		<item value="500" key="DIALOG_WIDTH"/>
+		<item value="false" key="TOGGLE_SELECTED"/>
+		<item value="402" key="DIALOG_HEIGHT"/>
+		<item value="654" key="DIALOG_X_ORIGIN"/>
+		<item value="251" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="NewWizardAction">
+	</section>
+</section>

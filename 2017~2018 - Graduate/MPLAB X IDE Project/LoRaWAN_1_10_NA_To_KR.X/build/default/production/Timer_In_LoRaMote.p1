@@ -1,0 +1,108 @@
+Version 3.2 HI-TECH Software Intermediate Code
+[v F67 `(v ~T0 @X0 0 tf1`uc ]
+"69 mcc_generated_files/LoRaWAN/sw_timer.h
+[v _SwTimerCreate `(uc ~T0 @X0 0 ef ]
+[v F39 `(v ~T0 @X0 0 tf1`uc ]
+"70
+[v _SwTimerSetCallback `(v ~T0 @X0 0 ef3`uc`*F39`uc ]
+"71
+[v _SwTimerSetTimeout `(v ~T0 @X0 0 ef2`uc`ul ]
+"74
+[v _SwTimerStart `(v ~T0 @X0 0 ef1`uc ]
+[; ;stdbool.h: 12: typedef unsigned char bool;
+[; ;stdint.h: 13: typedef signed char int8_t;
+[; ;stdint.h: 20: typedef signed int int16_t;
+[; ;stdint.h: 28: typedef signed short long int int24_t;
+[; ;stdint.h: 36: typedef signed long int int32_t;
+[; ;stdint.h: 43: typedef unsigned char uint8_t;
+[; ;stdint.h: 49: typedef unsigned int uint16_t;
+[; ;stdint.h: 56: typedef unsigned short long int uint24_t;
+[; ;stdint.h: 63: typedef unsigned long int uint32_t;
+[; ;stdint.h: 71: typedef signed char int_least8_t;
+[; ;stdint.h: 78: typedef signed int int_least16_t;
+[; ;stdint.h: 90: typedef signed short long int int_least24_t;
+[; ;stdint.h: 98: typedef signed long int int_least32_t;
+[; ;stdint.h: 105: typedef unsigned char uint_least8_t;
+[; ;stdint.h: 111: typedef unsigned int uint_least16_t;
+[; ;stdint.h: 121: typedef unsigned short long int uint_least24_t;
+[; ;stdint.h: 128: typedef unsigned long int uint_least32_t;
+[; ;stdint.h: 137: typedef signed char int_fast8_t;
+[; ;stdint.h: 144: typedef signed int int_fast16_t;
+[; ;stdint.h: 156: typedef signed short long int int_fast24_t;
+[; ;stdint.h: 164: typedef signed long int int_fast32_t;
+[; ;stdint.h: 171: typedef unsigned char uint_fast8_t;
+[; ;stdint.h: 177: typedef unsigned int uint_fast16_t;
+[; ;stdint.h: 187: typedef unsigned short long int uint_fast24_t;
+[; ;stdint.h: 194: typedef unsigned long int uint_fast32_t;
+[; ;stdint.h: 200: typedef int32_t intmax_t;
+[; ;stdint.h: 205: typedef uint32_t uintmax_t;
+[; ;stdint.h: 210: typedef int16_t intptr_t;
+[; ;stdint.h: 215: typedef uint16_t uintptr_t;
+[; ;sw_timer.h: 66: void SystemBlockingWaitMs(uint32_t ms);
+[; ;sw_timer.h: 67: void SystemTimerInit(void);
+[; ;sw_timer.h: 69: uint8_t SwTimerCreate(void);
+[; ;sw_timer.h: 70: void SwTimerSetCallback(uint8_t timerId, void (*callback)(uint8_t), uint8_t callbackParameter);
+[; ;sw_timer.h: 71: void SwTimerSetTimeout(uint8_t timerId, uint32_t msTimeout);
+[; ;sw_timer.h: 72: uint32_t SwTimerReadValue(uint8_t timerId);
+[; ;sw_timer.h: 73: uint8_t SwTimerIsRunning(uint8_t timerId);
+[; ;sw_timer.h: 74: void SwTimerStart(uint8_t timerId);
+[; ;sw_timer.h: 75: void SwTimerStop(uint8_t timerId);
+[; ;sw_timer.h: 76: void SwTimersExecute(void);
+[; ;sw_timer.h: 77: uint8_t SwTimersCanSleep(void);
+[; ;sw_timer.h: 78: uint32_t SwTimersInterrupt(void);
+[; ;sw_timer.h: 80: void TMR_OverrideRemaining(uint32_t ticksRemaining);
+[; ;sw_timer.h: 81: uint32_t TMR_GetDeltaTime(void);
+[; ;sw_timer.h: 82: uint16_t TMR_SwapTimer(uint16_t timerVal);
+[; ;Timer_In_LoRaMote.h: 7: uint8_t CreateTimer( void (*callback)(uint8_t) );
+[; ;Timer_In_LoRaMote.h: 8: void StartTimer( uint8_t timer_id, uint32_t time_in_milliseconds );
+"13 Timer_In_LoRaMote.c
+[v _CreateTimer `(uc ~T0 @X0 1 ef1`*F67 ]
+"14
+{
+[; ;Timer_In_LoRaMote.c: 13: uint8_t CreateTimer(void (*callback)(uint8_t))
+[; ;Timer_In_LoRaMote.c: 14: {
+[e :U _CreateTimer ]
+[v F73 `(v ~T0 @X0 0 tf1`uc ]
+"13
+[v _callback `*F73 ~T0 @X0 1 r1 ]
+"14
+[f ]
+"15
+[v _timer_id `uc ~T0 @X0 1 a ]
+[; ;Timer_In_LoRaMote.c: 15: uint8_t timer_id;
+[; ;Timer_In_LoRaMote.c: 17: timer_id = SwTimerCreate();
+"17
+[e = _timer_id ( _SwTimerCreate ..  ]
+[; ;Timer_In_LoRaMote.c: 18: SwTimerSetCallback( timer_id , callback, 0 );
+"18
+[e ( _SwTimerSetCallback (3 , , _timer_id _callback -> -> 0 `i `uc ]
+[; ;Timer_In_LoRaMote.c: 19: return timer_id;
+"19
+[e ) _timer_id ]
+[e $UE 1  ]
+[; ;Timer_In_LoRaMote.c: 20: }
+"20
+[e :UE 1 ]
+}
+"23
+[v _StartTimer `(v ~T0 @X0 1 ef2`uc`ul ]
+"24
+{
+[; ;Timer_In_LoRaMote.c: 23: void StartTimer( uint8_t timer_id, uint32_t time_in_milliseconds )
+[; ;Timer_In_LoRaMote.c: 24: {
+[e :U _StartTimer ]
+"23
+[v _timer_id `uc ~T0 @X0 1 r1 ]
+[v _time_in_milliseconds `ul ~T0 @X0 1 r2 ]
+"24
+[f ]
+[; ;Timer_In_LoRaMote.c: 25: SwTimerSetTimeout( timer_id, ((time_in_milliseconds) < 0x000FFFFFUL ? ( (((uint32_t)(time_in_milliseconds)) << (12)) / 125UL ) : ( (((uint32_t)(time_in_milliseconds)) / 125UL) << (12) ) ) );
+"25
+[e ( _SwTimerSetTimeout (2 , _timer_id ? < _time_in_milliseconds -> 1048575 `ul : / << _time_in_milliseconds -> 12 `i -> 125 `ul << / _time_in_milliseconds -> 125 `ul -> 12 `i ]
+[; ;Timer_In_LoRaMote.c: 26: SwTimerStart( timer_id );
+"26
+[e ( _SwTimerStart (1 _timer_id ]
+[; ;Timer_In_LoRaMote.c: 27: }
+"27
+[e :UE 2 ]
+}

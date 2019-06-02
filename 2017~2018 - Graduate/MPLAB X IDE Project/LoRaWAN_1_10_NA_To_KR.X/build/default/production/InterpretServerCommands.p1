@@ -1,0 +1,211 @@
+Version 3.2 HI-TECH Software Intermediate Code
+"25 InterpretServerCommands.c
+[v _SendingControl `(*uc ~T0 @X0 0 ef2`*uc`uc ]
+"26
+[v _LedControl `(*uc ~T0 @X0 0 ef2`*uc`uc ]
+"27
+[v _InterpretSktJoinMessage `(v ~T0 @X0 0 ef1`*uc ]
+"22
+[v _rx_data_to_string `(*uc ~T0 @X0 0 ef2`*uc`uc ]
+"194 C:\Program Files (x86)\Microchip\xc8\v1.44\include\stdio.h
+[v _sprintf `(i ~T0 @X0 0 e1v`*uc`*Cuc ]
+[; ;__size_t.h: 4: typedef unsigned size_t;
+[; ;stdarg.h: 7: typedef void * va_list[1];
+[; ;stdarg.h: 10: extern void * __va_start(void);
+[; ;stdarg.h: 13: extern void * __va_arg(void *, ...);
+[; ;stdio.h: 43: struct __prbuf
+[; ;stdio.h: 44: {
+[; ;stdio.h: 45: char * ptr;
+[; ;stdio.h: 46: void (* func)(char);
+[; ;stdio.h: 47: };
+[; ;errno.h: 29: extern int errno;
+[; ;conio.h: 12: extern void init_uart(void);
+[; ;conio.h: 14: extern char getch(void);
+[; ;conio.h: 15: extern char getche(void);
+[; ;conio.h: 16: extern void putch(char);
+[; ;conio.h: 17: extern void ungetch(char);
+[; ;conio.h: 19: extern __bit kbhit(void);
+[; ;conio.h: 23: extern char * cgets(char *);
+[; ;conio.h: 24: extern void cputs(const char *);
+[; ;stdio.h: 88: extern int cprintf(char *, ...);
+[; ;stdio.h: 93: extern int _doprnt(struct __prbuf *, const register char *, register va_list);
+[; ;stdio.h: 183: extern char * gets(char *);
+[; ;stdio.h: 184: extern int puts(const char *);
+[; ;stdio.h: 185: extern int scanf(const char *, ...) __attribute__((unsupported("scanf() is not supported by this compiler")));
+[; ;stdio.h: 186: extern int sscanf(const char *, const char *, ...) __attribute__((unsupported("sscanf() is not supported by this compiler")));
+[; ;stdio.h: 187: extern int vprintf(const char *, va_list) __attribute__((unsupported("vprintf() is not supported by this compiler")));
+[; ;stdio.h: 188: extern int vsprintf(char *, const char *, va_list) __attribute__((unsupported("vsprintf() is not supported by this compiler")));
+[; ;stdio.h: 189: extern int vscanf(const char *, va_list ap) __attribute__((unsupported("vscanf() is not supported by this compiler")));
+[; ;stdio.h: 190: extern int vsscanf(const char *, const char *, va_list) __attribute__((unsupported("vsscanf() is not supported by this compiler")));
+[; ;stdio.h: 194: extern int sprintf(char *, const char *, ...);
+[; ;stdio.h: 195: extern int printf(const char *, ...);
+[; ;stdint.h: 13: typedef signed char int8_t;
+[; ;stdint.h: 20: typedef signed int int16_t;
+[; ;stdint.h: 28: typedef signed short long int int24_t;
+[; ;stdint.h: 36: typedef signed long int int32_t;
+[; ;stdint.h: 43: typedef unsigned char uint8_t;
+[; ;stdint.h: 49: typedef unsigned int uint16_t;
+[; ;stdint.h: 56: typedef unsigned short long int uint24_t;
+[; ;stdint.h: 63: typedef unsigned long int uint32_t;
+[; ;stdint.h: 71: typedef signed char int_least8_t;
+[; ;stdint.h: 78: typedef signed int int_least16_t;
+[; ;stdint.h: 90: typedef signed short long int int_least24_t;
+[; ;stdint.h: 98: typedef signed long int int_least32_t;
+[; ;stdint.h: 105: typedef unsigned char uint_least8_t;
+[; ;stdint.h: 111: typedef unsigned int uint_least16_t;
+[; ;stdint.h: 121: typedef unsigned short long int uint_least24_t;
+[; ;stdint.h: 128: typedef unsigned long int uint_least32_t;
+[; ;stdint.h: 137: typedef signed char int_fast8_t;
+[; ;stdint.h: 144: typedef signed int int_fast16_t;
+[; ;stdint.h: 156: typedef signed short long int int_fast24_t;
+[; ;stdint.h: 164: typedef signed long int int_fast32_t;
+[; ;stdint.h: 171: typedef unsigned char uint_fast8_t;
+[; ;stdint.h: 177: typedef unsigned int uint_fast16_t;
+[; ;stdint.h: 187: typedef unsigned short long int uint_fast24_t;
+[; ;stdint.h: 194: typedef unsigned long int uint_fast32_t;
+[; ;stdint.h: 200: typedef int32_t intmax_t;
+[; ;stdint.h: 205: typedef uint32_t uintmax_t;
+[; ;stdint.h: 210: typedef int16_t intptr_t;
+[; ;stdint.h: 215: typedef uint16_t uintptr_t;
+[; ;InterpretServerCommands.c: 22: char* rx_data_to_string (uint8_t* pData, uint8_t dataLength);
+[; ;InterpretServerCommands.c: 25: char* SendingControl (uint8_t* pData, uint8_t data_length);
+[; ;InterpretServerCommands.c: 26: char* LedControl(uint8_t* pData, uint8_t data_length);
+[; ;InterpretServerCommands.c: 27: void InterpretSktJoinMessage (uint8_t *message);
+"30 InterpretServerCommands.c
+[v _InterpretServerCommands `(*uc ~T0 @X0 1 ef2`*uc`uc ]
+"31
+{
+[; ;InterpretServerCommands.c: 30: char* InterpretServerCommands (uint8_t* pData, uint8_t data_length)
+[; ;InterpretServerCommands.c: 31: {
+[e :U _InterpretServerCommands ]
+"30
+[v _pData `*uc ~T0 @X0 1 r1 ]
+[v _data_length `uc ~T0 @X0 1 r2 ]
+"31
+[f ]
+"32
+[v _fPort `uc ~T0 @X0 1 a ]
+[; ;InterpretServerCommands.c: 32: uint8_t fPort = pData[0];
+[e = _fPort *U + _pData * -> -> 0 `i `x -> -> # *U _pData `i `x ]
+[; ;InterpretServerCommands.c: 33: pData++;
+"33
+[e ++ _pData * -> -> 1 `i `x -> -> # *U _pData `i `x ]
+[; ;InterpretServerCommands.c: 34: data_length--;
+"34
+[e -- _data_length -> -> 1 `i `uc ]
+[; ;InterpretServerCommands.c: 36: switch (fPort)
+"36
+[e $U 4  ]
+[; ;InterpretServerCommands.c: 37: {
+"37
+{
+[; ;InterpretServerCommands.c: 38: case 1:
+"38
+[e :U 5 ]
+[; ;InterpretServerCommands.c: 39: return SendingControl (pData, data_length);
+"39
+[e ) ( _SendingControl (2 , _pData _data_length ]
+[e $UE 2  ]
+[; ;InterpretServerCommands.c: 40: case 2:
+"40
+[e :U 6 ]
+[; ;InterpretServerCommands.c: 41: return LedControl (pData, data_length);
+"41
+[e ) ( _LedControl (2 , _pData _data_length ]
+[e $UE 2  ]
+[; ;InterpretServerCommands.c: 42: case 0xDF:
+"42
+[e :U 7 ]
+[; ;InterpretServerCommands.c: 43: InterpretSktJoinMessage(pData);
+"43
+[e ( _InterpretSktJoinMessage (1 _pData ]
+[; ;InterpretServerCommands.c: 44: return "skt data received";
+"44
+[e ) -> :s 1C `*uc ]
+[e $UE 2  ]
+[; ;InterpretServerCommands.c: 45: default:
+"45
+[e :U 8 ]
+[; ;InterpretServerCommands.c: 46: return rx_data_to_string (pData, data_length);
+"46
+[e ) ( _rx_data_to_string (2 , _pData _data_length ]
+[e $UE 2  ]
+"47
+}
+[; ;InterpretServerCommands.c: 47: }
+[e $U 3  ]
+"36
+[e :U 4 ]
+[e [\ _fPort , $ -> -> 1 `i `uc 5
+ , $ -> -> 2 `i `uc 6
+ , $ -> -> 223 `i `uc 7
+ 8 ]
+"47
+[e :U 3 ]
+[; ;InterpretServerCommands.c: 48: }
+"48
+[e :UE 2 ]
+}
+"51
+[v _rx_data_to_string `(*uc ~T0 @X0 1 ef2`*uc`uc ]
+"52
+{
+[; ;InterpretServerCommands.c: 51: char* rx_data_to_string(uint8_t* pData, uint8_t dataLength)
+[; ;InterpretServerCommands.c: 52: {
+[e :U _rx_data_to_string ]
+"51
+[v _pData `*uc ~T0 @X0 1 r1 ]
+[v _dataLength `uc ~T0 @X0 1 r2 ]
+"52
+[f ]
+"53
+[v F108 `uc ~T0 @X0 -> 50 `i s buffer ]
+"54
+[v _len `uc ~T0 @X0 1 a ]
+"55
+[v _data_start_ptr `*uc ~T0 @X0 1 a ]
+[; ;InterpretServerCommands.c: 53: static char buffer[50];
+[; ;InterpretServerCommands.c: 54: uint8_t len;
+[; ;InterpretServerCommands.c: 55: char* data_start_ptr;
+[; ;InterpretServerCommands.c: 57: len = sprintf(buffer, "mac_rx %d", pData[0]);
+"57
+[e = _len -> ( _sprintf (1 , (. , &U F108 :s 2C -> *U + _pData * -> -> 0 `i `x -> -> # *U _pData `i `x `i `uc ]
+[; ;InterpretServerCommands.c: 58: data_start_ptr = buffer + len;
+"58
+[e = _data_start_ptr + &U F108 * -> _len `ux -> -> # *U &U F108 `ui `ux ]
+[; ;InterpretServerCommands.c: 60: for (uint8_t i=1; i<dataLength; i++) {
+"60
+{
+[v _i `uc ~T0 @X0 1 a ]
+[e = _i -> -> 1 `i `uc ]
+[e $U 13  ]
+[e :U 10 ]
+{
+[; ;InterpretServerCommands.c: 61: len = sprintf(data_start_ptr, " %02X", pData[i]);
+"61
+[e = _len -> ( _sprintf (1 , (. , _data_start_ptr :s 3C -> *U + _pData * -> _i `ux -> -> # *U _pData `ui `ux `i `uc ]
+[; ;InterpretServerCommands.c: 62: data_start_ptr+=len;
+"62
+[e =+ _data_start_ptr * -> _len `ux -> -> # *U _data_start_ptr `ui `ux ]
+"64
+}
+"60
+[e ++ _i -> -> 1 `i `uc ]
+[e :U 13 ]
+[e $ < -> _i `i -> _dataLength `i 10  ]
+[e :U 11 ]
+"64
+}
+[; ;InterpretServerCommands.c: 64: }
+[; ;InterpretServerCommands.c: 65: return buffer;
+"65
+[e ) &U F108 ]
+[e $UE 9  ]
+[; ;InterpretServerCommands.c: 66: }
+"66
+[e :UE 9 ]
+}
+[p f _sprintf 10518660 ]
+[a 1C 115 107 116 32 100 97 116 97 32 114 101 99 101 105 118 101 100 0 ]
+[a 2C 109 97 99 95 114 120 32 37 100 0 ]
+[a 3C 32 37 48 50 88 0 ]

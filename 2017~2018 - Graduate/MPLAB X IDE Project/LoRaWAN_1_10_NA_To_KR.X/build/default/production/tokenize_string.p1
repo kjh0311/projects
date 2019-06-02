@@ -1,0 +1,51 @@
+Version 3.2 HI-TECH Software Intermediate Code
+"57 C:\Program Files (x86)\Microchip\xc8\v1.44\include\string.h
+[v _strchr `(*uc ~T0 @X0 0 ef2`*Cuc`i ]
+[; ;__size_t.h: 4: typedef unsigned size_t;
+[; ;string.h: 14: extern void * memcpy(void *, const void *, size_t);
+[; ;string.h: 15: extern void * memmove(void *, const void *, size_t);
+[; ;string.h: 16: extern void * memset(void *, int, size_t);
+[; ;string.h: 36: extern char * strcat(char *, const char *);
+[; ;string.h: 37: extern char * strcpy(char *, const char *);
+[; ;string.h: 38: extern char * strncat(char *, const char *, size_t);
+[; ;string.h: 39: extern char * strncpy(char *, const char *, size_t);
+[; ;string.h: 40: extern char * strdup(const char *);
+[; ;string.h: 41: extern char * strtok(char *, const char *);
+[; ;string.h: 44: extern int memcmp(const void *, const void *, size_t);
+[; ;string.h: 45: extern int strcmp(const char *, const char *);
+[; ;string.h: 46: extern int stricmp(const char *, const char *);
+[; ;string.h: 47: extern int strncmp(const char *, const char *, size_t);
+[; ;string.h: 48: extern int strnicmp(const char *, const char *, size_t);
+[; ;string.h: 49: extern void * memchr(const void *, int, size_t);
+[; ;string.h: 50: extern size_t strcspn(const char *, const char *);
+[; ;string.h: 51: extern char * strpbrk(const char *, const char *);
+[; ;string.h: 52: extern size_t strspn(const char *, const char *);
+[; ;string.h: 53: extern char * strstr(const char *, const char *);
+[; ;string.h: 54: extern char * stristr(const char *, const char *);
+[; ;string.h: 55: extern char * strerror(int);
+[; ;string.h: 56: extern size_t strlen(const char *);
+[; ;string.h: 57: extern char * strchr(const char *, int);
+[; ;string.h: 58: extern char * strichr(const char *, int);
+[; ;string.h: 59: extern char * strrchr(const char *, int);
+[; ;string.h: 60: extern char * strrichr(const char *, int);
+"11 tokenize_string.c
+[v _tokenize_string `(*uc ~T0 @X0 1 ef1`*uc ]
+{
+[; ;tokenize_string.c: 11: char* tokenize_string(char* string) {
+[e :U _tokenize_string ]
+[v _string `*uc ~T0 @X0 1 r1 ]
+[f ]
+[; ;tokenize_string.c: 12: string = strchr(string, ' ');
+"12
+[e = _string ( _strchr (2 , -> _string `*Cuc -> -> 32 `ui `i ]
+[; ;tokenize_string.c: 13: *string = '\0';
+"13
+[e = *U _string -> -> 0 `ui `uc ]
+[; ;tokenize_string.c: 14: return string + 1;
+"14
+[e ) + _string * -> -> 1 `i `x -> -> # *U _string `i `x ]
+[e $UE 1  ]
+[; ;tokenize_string.c: 15: }
+"15
+[e :UE 1 ]
+}

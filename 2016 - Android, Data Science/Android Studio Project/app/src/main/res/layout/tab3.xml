@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:paddingBottom="@dimen/activity_vertical_margin"
+	android:paddingLeft="@dimen/activity_horizontal_margin"
+	android:paddingRight="@dimen/activity_horizontal_margin"
+	android:orientation="vertical"
+	>
+
+
+	<CalendarView
+		android:id="@+id/calendar_view"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="100"
+		android:showWeekNumber="false"
+		/>
+
+
+	<!-- 겹치는 것이 가능하게 하기 위해서 FrameLayout 을 씀 -->
+
+
+	<FrameLayout
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="100">
+
+	<!-- 아래 순서로 배치해야 한다. -->
+
+	<include
+		layout="@layout/tab2_03scroll_view"
+	    android:id="@+id/scroll_view"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		/>
+
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:layout_gravity="right"
+		    android:background="#00FFFFFF"
+			>
+
+			<Button
+				android:id = "@+id/set_button"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/pick_date" />
+
+			<CheckBox
+				android:id = "@+id/check_hide_calendar"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/check_hide_calendar"/>
+
+		</LinearLayout>
+
+	</FrameLayout>
+
+</LinearLayout>

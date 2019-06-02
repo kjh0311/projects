@@ -1,0 +1,25 @@
+﻿Build started 2016-03-24 오전 11:42:47.
+     1>Project "E:\비주얼 스튜디오 프로젝트\런닝머신 운동기록 입력기 - 블루투스 이용\런닝머신 운동기록 입력기 - 블루투스 이용\런닝머신 운동기록 입력기 - 블루투스 이용.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\런닝머신 운동기록 입력기 - 블루투스 이용.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt SendData\BluetoothServer.cpp
+         BluetoothServer.cpp
+       Link:
+         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\비주얼 스튜디오 프로젝트\런닝머신 운동기록 입력기 - 블루투스 이용\Debug\런닝머신 운동기록 입력기 - 블루투스 이용.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\비주얼 스튜디오 프로젝트\런닝머신 운동기록 입력기 - 블루투스 이용\Debug\런닝머신 운동기록 입력기 - 블루투스 이용.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\비주얼 스튜디오 프로젝트\런닝머신 운동기록 입력기 - 블루투스 이용\Debug\런닝머신 운동기록 입력기 - 블루투스 이용.lib" /MACHINE:X86 "Debug\런닝머신 운동기록 입력기 - 블루투스 이용.res"
+         Debug\BluetoothServer.obj
+         Debug\fix_digit.obj
+         Debug\ready_to_accept.obj
+         Debug\SendData.obj
+         Debug\Handles.obj
+         Debug\ShowAllContents.obj
+         Debug\ShowContents.obj
+         Debug\ShowDateInput.obj
+         Debug\ShowTimeInput.obj
+         Debug\Show_Detail_Input.obj
+         Debug\stdafx.obj
+         "Debug\런닝머신 운동기록 입력기 - 블루투스 이용.obj"
+         런닝머신 운동기록 입력기 - 블루투스 이용.vcxproj -> E:\비주얼 스튜디오 프로젝트\런닝머신 운동기록 입력기 - 블루투스 이용\Debug\런닝머신 운동기록 입력기 - 블루투스 이용.exe
+     1>Done Building Project "E:\비주얼 스튜디오 프로젝트\런닝머신 운동기록 입력기 - 블루투스 이용\런닝머신 운동기록 입력기 - 블루투스 이용\런닝머신 운동기록 입력기 - 블루투스 이용.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:10.25

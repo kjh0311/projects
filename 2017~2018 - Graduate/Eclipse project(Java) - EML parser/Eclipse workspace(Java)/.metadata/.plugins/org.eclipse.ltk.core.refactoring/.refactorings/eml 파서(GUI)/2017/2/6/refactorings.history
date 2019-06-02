@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;eml_parser&apos; to &apos;실험/src&apos;&#x0D;&#x0A;- Original project: &apos;eml 파서&apos;&#x0D;&#x0A;- Destination element: &apos;실험/src&apos;&#x0D;&#x0A;- Original element: &apos;eml 파서/src/eml_parser&apos;" description="Copy package" destination="=실험/src" element1="/src&lt;eml_parser" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1486520848975" version="1.0"/>
+</session>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- android:id = "@+id/control_set" 는 공통 id를 주기 위함 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id = "@+id/control_set"
+              android:orientation="vertical"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:scaleType="centerInside">
+
+
+	<include layout="@layout/tab1_07two_up_buttons"
+	         android:id = "@+id/two_up_buttons"
+	         android:layout_width="match_parent"
+	         android:layout_height="0dp"
+			 android:layout_weight="1"
+			 android:scaleType="centerInside"/>
+
+
+	<!--
+		InputFilter 를 쓸 거면 아래의 속성은 쓰면 안 된다.
+		android:inputType="numberDecimal"
+		입력창이 안 보이면 안 되므로,
+		layout_height wrap_content 를 주었다.
+	-->
+	<EditText
+		android:id="@+id/edit_value"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:minHeight="@dimen/edit_min_height"
+		android:layout_weight="1"
+		android:gravity="end"
+		android:text="@string/start_value"
+		android:maxLength="4"/>
+
+
+	<include layout="@layout/tab1_08two_down_buttons"
+	         android:id = "@+id/two_down_buttons"
+	         android:layout_width="match_parent"
+	         android:layout_height="0dp"
+	         android:layout_weight="1"
+	         android:scaleType="centerInside"
+		/>
+
+
+
+</LinearLayout>

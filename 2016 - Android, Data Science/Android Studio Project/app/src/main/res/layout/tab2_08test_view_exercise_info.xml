@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+
+
+    <EditText android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id = "@+id/edit_kcal"
+              android:text="@string/default_kcal"
+              android:maxLength="4"/>
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="kcal"/>
+
+
+    <EditText android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id = "@+id/edit_km"
+              android:text="@string/default_km"
+              android:maxLength="4"/>
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="km"/>
+
+
+	<TextView android:layout_width="wrap_content"
+	          android:layout_height="wrap_content"
+	          android:text="경사:"/>
+	<EditText android:layout_width="wrap_content"
+	          android:layout_height="wrap_content"
+	          android:id = "@+id/edit_grad"
+	          android:text="@string/default_grad"
+	          android:maxLength="4"/>
+	<TextView android:layout_width="match_parent"
+	          android:layout_height="wrap_content"
+	          android:text="%"/>
+
+
+	<TextView android:layout_width="wrap_content"
+	          android:layout_height="wrap_content"
+	          android:text="속도:"/>
+	<EditText android:layout_width="wrap_content"
+	          android:layout_height="wrap_content"
+	          android:id = "@+id/edit_speed"
+	          android:text="@string/default_speed"
+	          android:maxLength="4"/>
+	<TextView android:layout_width="wrap_content"
+	          android:layout_height="wrap_content"
+	          android:text="km/h"/>
+
+
+</LinearLayout>

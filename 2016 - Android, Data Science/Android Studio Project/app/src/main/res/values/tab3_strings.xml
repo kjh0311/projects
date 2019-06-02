@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="pick_date">날짜 지정 화면 열기</string>
+	<string name="explain_calendar">위 아래로 스크롤 하면 연 월을 바꿀 수 있습니다.</string>
+	<string name="check_hide_calendar">달력 숨기기</string>
+</resources>

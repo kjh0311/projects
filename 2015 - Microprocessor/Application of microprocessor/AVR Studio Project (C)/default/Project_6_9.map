@@ -1,0 +1,744 @@
+Archive member included because of file (symbol)
+
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_udivmodqi4.o)
+                              shownumberandtext.o (__udivmodqi4)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_exit.o)
+                              c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51/crtm128.o (exit)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_clear_bss.o)
+                              DoorControl.o (__do_clear_bss)
+
+Allocating common symbols
+Common symbol       size              file
+
+d1                  0x6               showtimealarmdiff.o
+originRightFont     0x8               showsettingrect.o
+led_count           0x1               EasyPK_AVR.o
+AlarmTimes          0x10              Watch.o
+originBottomFonts   0x80              showsettingrect.o
+originTopFonts      0x80              showsettingrect.o
+originLeftFont      0x8               showsettingrect.o
+d2                  0x6               showtimealarmdiff.o
+CurrentTime         0x8               Watch.o
+led_toggle_flag     0x1               EasyPK_AVR.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00020000         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000400         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+Address of section .data set to 0x800100
+LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51/crtm128.o
+LOAD WatchSetControl.o
+LOAD DoorControl.o
+LOAD KeyPadRead.o
+LOAD Main.o
+LOAD Moter.o
+LOAD F8X8A.o
+LOAD showtimealarmdiff.o
+LOAD startwatch.o
+LOAD updatewatch.o
+LOAD Watch.o
+LOAD EasyPK_AVR.o
+LOAD eaypkglcd.o
+LOAD graphiclcd.o
+LOAD shownumberandtext.o
+LOAD showsettingrect.o
+LOAD ShowTitle.o
+LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a
+LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51\libc.a
+LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000     0x19ac
+ *(.vectors)
+ .vectors       0x00000000       0x8c c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51/crtm128.o
+                0x00000000                __vectors
+                0x00000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+ .progmem.gcc_sw_table
+                0x0000008c       0xac shownumberandtext.o
+ *(.progmem*)
+                0x00000138                . = ALIGN (0x2)
+                0x00000138                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x00000138        0x0 linker stubs
+ *(.trampolines*)
+                0x00000138                __trampolines_end = .
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x00000138                __ctors_start = .
+ *(.ctors)
+                0x00000138                __ctors_end = .
+                0x00000138                __dtors_start = .
+ *(.dtors)
+                0x00000138                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x00000138        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51/crtm128.o
+                0x00000138                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x00000138        0xc c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51/crtm128.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x00000144       0x1a c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51/crtm128.o
+                0x00000144                __do_copy_data
+ .init4         0x0000015e       0x10 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_clear_bss.o)
+                0x0000015e                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x0000016e        0x8 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51/crtm128.o
+ *(.init9)
+ *(.text)
+ .text          0x00000176        0x4 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51/crtm128.o
+                0x00000176                __vector_22
+                0x00000176                __vector_28
+                0x00000176                __vector_1
+                0x00000176                __vector_32
+                0x00000176                __vector_34
+                0x00000176                __vector_24
+                0x00000176                __vector_12
+                0x00000176                __bad_interrupt
+                0x00000176                __vector_6
+                0x00000176                __vector_31
+                0x00000176                __vector_3
+                0x00000176                __vector_23
+                0x00000176                __vector_30
+                0x00000176                __vector_25
+                0x00000176                __vector_11
+                0x00000176                __vector_13
+                0x00000176                __vector_17
+                0x00000176                __vector_19
+                0x00000176                __vector_7
+                0x00000176                __vector_27
+                0x00000176                __vector_5
+                0x00000176                __vector_33
+                0x00000176                __vector_4
+                0x00000176                __vector_9
+                0x00000176                __vector_2
+                0x00000176                __vector_21
+                0x00000176                __vector_15
+                0x00000176                __vector_29
+                0x00000176                __vector_8
+                0x00000176                __vector_26
+                0x00000176                __vector_14
+                0x00000176                __vector_10
+                0x00000176                __vector_18
+                0x00000176                __vector_20
+ .text          0x0000017a        0x2 WatchSetControl.o
+                0x0000017a                WatchSetControl
+ .text          0x0000017c      0x2fc DoorControl.o
+                0x000002f8                doorOpenedControl
+                0x000003ee                doorTimeExpired
+                0x000001f6                openStart
+                0x0000023e                closingToNext
+                0x00000250                checkAlarmTime
+                0x0000020a                openedStart
+                0x000002e4                doorCloseControl
+                0x0000043e                DoorControl
+                0x000002ee                doorStopControl
+                0x00000302                doorOpenControl
+                0x00000376                checkDoorOpenedTime
+                0x0000017c                ToNextState
+                0x0000030c                DoorControlForState
+                0x0000033a                checkDoorClosingTime
+                0x0000022a                closeStart
+                0x000003b2                checkDoorOpeningTime
+ .text          0x00000478      0x128 KeyPadRead.o
+                0x00000486                KeyPadScanL1
+                0x00000494                KeyPadScanH0
+                0x00000478                KeyPadScanL0
+                0x000004b0                KeyPadRead
+                0x000004a2                KeyPadScanH1
+ .text          0x000005a0       0xae Main.o
+                0x000005f6                watchISR
+                0x000005a0                checkKeyPressed
+                0x0000063e                main
+                0x00000610                mainInLoop
+                0x000005bc                __vector_16
+ .text          0x0000064e       0x8a Moter.o
+                0x0000064e                StepMotorForward
+                0x0000068c                StepMotorBackward
+                0x000006ce                StepMotorStop
+ .text          0x000006d8        0x0 F8X8A.o
+ .text          0x000006d8      0x260 showtimealarmdiff.o
+                0x000007e4                getMinDiff
+                0x0000082e                ShowReminderText
+                0x000006d8                getAlarmDiff
+                0x0000086c                ShowTimeAlarmDiff
+                0x0000092e                ShowAlarmTimeReminder
+ .text          0x00000938       0xa2 startwatch.o
+                0x00000938                ShowAlarmTime7Seg
+                0x00000998                StartWatch
+                0x0000093a                ShowTime
+ .text          0x000009da      0x10a updatewatch.o
+                0x00000a02                UpdateWatchForSecond
+                0x000009da                ToggleAMPM
+                0x00000a9e                UpdateWatch
+ .text          0x00000ae4       0x82 Watch.o
+                0x00000b0a                SetDefaultAlarmTime
+                0x00000b58                TimerStart
+                0x00000ae4                SetDefaultCurrentTime
+ .text          0x00000b66      0x238 EasyPK_AVR.o
+                0x00000d7c                LCD_initialize
+                0x00000b90                led_run
+                0x00000d5e                LCD_Print
+                0x00000bc6                CpuLedSet
+                0x00000c2c                ExtFndSet
+                0x00000cca                Delay_ms
+                0x00000d04                LCD_data
+                0x00000cb2                Delay_us
+                0x00000d36                LCD_command
+                0x00000b66                Platform_Init
+                0x00000b82                Timer0_Init
+ .text          0x00000d9e      0x53a eaypkglcd.o
+                0x00000d9e                GLcdSetData
+                0x00000dd4                GLcdCmd
+                0x00000eea                GLcdStringPrint
+                0x00000e08                GraphLcdCharactorSet
+                0x0000128c                GLcdClr
+ .text          0x000012d8        0x0 graphiclcd.o
+ .text          0x000012d8      0x398 shownumberandtext.o
+                0x00001352                two_int_to_font
+                0x00001436                ShowSi
+                0x000012d8                one_int_to_font
+                0x0000142a                ShowBoon
+                0x0000141e                ShowCho
+                0x000014bc                ShowText
+                0x000013e2                ShowAMPM
+                0x00001392                ShowNumber
+                0x00001442                ShowTitle
+ .text          0x00001670      0x320 showsettingrect.o
+                0x000016ae                GLcdDataOr
+                0x00001670                GLcdDataAnd
+                0x0000193c                ShowSettingRect
+                0x00001858                eraseLeftEdge
+                0x000018e4                drawBottomEdge
+                0x00001866                EraseSettingRect
+                0x0000192e                drawLeftEdge
+                0x00001902                drawTopEdge
+                0x0000180e                eraseBottomEdge
+                0x000016ec                GraphLcdCharactorSet_OR_AND
+                0x0000182c                eraseTopEdge
+                0x00001920                drawRightEdge
+                0x0000184a                eraseRightEdge
+ .text          0x00001990        0x0 ShowTitle.o
+ .text          0x00001990        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_udivmodqi4.o)
+ .text          0x00001990        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_exit.o)
+ .text          0x00001990        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_clear_bss.o)
+                0x00001990                . = ALIGN (0x2)
+ *(.text.*)
+ .text.libgcc   0x00001990       0x18 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_udivmodqi4.o)
+                0x00001990                __udivmodqi4
+ .text.libgcc   0x000019a8        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_exit.o)
+ .text.libgcc   0x000019a8        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_clear_bss.o)
+                0x000019a8                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x000019a8        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_exit.o)
+                0x000019a8                exit
+                0x000019a8                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x000019a8        0x4 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_exit.o)
+ *(.fini0)
+                0x000019ac                _etext = .
+
+.data           0x00800100      0x196 load address 0x000019ac
+                0x00800100                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x00800100        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51/crtm128.o
+ .data          0x00800100        0x0 WatchSetControl.o
+ .data          0x00800100        0x0 DoorControl.o
+ .data          0x00800100        0x0 KeyPadRead.o
+ .data          0x00800100        0x0 Main.o
+ .data          0x00800100        0x0 Moter.o
+ .data          0x00800100        0x0 F8X8A.o
+ .data          0x00800100        0x0 showtimealarmdiff.o
+ .data          0x00800100        0xe startwatch.o
+                0x0080010c                title
+ .data          0x0080010e        0x0 updatewatch.o
+ .data          0x0080010e        0x0 Watch.o
+ .data          0x0080010e        0x0 EasyPK_AVR.o
+ .data          0x0080010e        0x0 eaypkglcd.o
+ .data          0x0080010e        0x0 graphiclcd.o
+ .data          0x0080010e      0x168 shownumberandtext.o
+                0x00800166                font_Um
+                0x00800126                font_Gak
+                0x00800136                font_Cho
+                0x0080015e                font_Nam
+                0x00800266                font_8
+                0x0080019e                font_F
+                0x0080018e                font_D
+                0x008001de                font_S
+                0x00800226                font_0
+                0x0080025e                font_7
+                0x00800146                font_Jyun
+                0x008001e6                font_T
+                0x008001b6                font_I
+                0x008001ce                font_P
+                0x0080014e                font_Hoo
+                0x00800186                font_C
+                0x0080023e                font_3
+                0x00800176                font_A
+                0x008001be                font_K
+                0x0080021e                font_hyphen
+                0x008001f6                font_NULL
+                0x0080026e                font_9
+                0x008001a6                font_G
+                0x00800116                font_Jae
+                0x0080016e                font_L
+                0x0080011e                font_Si
+                0x00800256                font_6
+                0x00800246                font_4
+                0x008001ae                font_H
+                0x008001c6                font_O
+                0x0080017e                font_B
+                0x00800216                font_s
+                0x0080012e                font_Boon
+                0x00800196                font_E
+                0x0080013e                font_OO
+                0x008001fe                font_u
+                0x0080022e                font_1
+                0x008001d6                font_R
+                0x0080020e                font_n
+                0x0080010e                font_Hyun
+                0x00800206                font_i
+                0x008001ee                font_Y
+                0x00800156                font_Gan
+                0x0080024e                font_5
+                0x00800236                font_2
+ .data          0x00800276       0x20 showsettingrect.o
+                0x00800276                font_LeftEdge
+                0x0080028e                font_BottomEdge
+                0x00800286                font_TopEdge
+                0x0080027e                font_RightEdge
+ .data          0x00800296        0x0 ShowTitle.o
+ .data          0x00800296        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_udivmodqi4.o)
+ .data          0x00800296        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_exit.o)
+ .data          0x00800296        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_clear_bss.o)
+ *(.data*)
+ *(.rodata)
+ *(.rodata*)
+ *(.gnu.linkonce.d*)
+                0x00800296                . = ALIGN (0x2)
+                0x00800296                _edata = .
+                0x00800296                PROVIDE (__data_end, .)
+
+.bss            0x00800296      0x146
+                0x00800296                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x00800296        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51/crtm128.o
+ .bss           0x00800296        0x0 WatchSetControl.o
+ .bss           0x00800296        0x8 DoorControl.o
+                0x00800296                Door
+ .bss           0x0080029e        0x0 KeyPadRead.o
+ .bss           0x0080029e        0x4 Main.o
+                0x0080029f                ExtGraphLcdCnt
+                0x008002a0                tenMiliSec
+                0x0080029e                StepMotorCnt
+ .bss           0x008002a2        0x2 Moter.o
+                0x008002a2                count_flag
+ .bss           0x008002a4        0x0 F8X8A.o
+ .bss           0x008002a4        0x0 showtimealarmdiff.o
+ .bss           0x008002a4        0x0 startwatch.o
+ .bss           0x008002a4        0x1 updatewatch.o
+ .bss           0x008002a5        0x1 Watch.o
+                0x008002a5                alarmIndex
+ .bss           0x008002a6        0x0 EasyPK_AVR.o
+ .bss           0x008002a6        0x0 eaypkglcd.o
+ .bss           0x008002a6        0x0 graphiclcd.o
+ .bss           0x008002a6        0x0 shownumberandtext.o
+ .bss           0x008002a6        0x0 showsettingrect.o
+ .bss           0x008002a6        0x0 ShowTitle.o
+ .bss           0x008002a6        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_udivmodqi4.o)
+ .bss           0x008002a6        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_exit.o)
+ .bss           0x008002a6        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_clear_bss.o)
+ *(.bss*)
+ *(COMMON)
+ COMMON         0x008002a6        0xc showtimealarmdiff.o
+                0x008002a6                d1
+                0x008002ac                d2
+ COMMON         0x008002b2       0x18 Watch.o
+                0x008002b2                AlarmTimes
+                0x008002c2                CurrentTime
+ COMMON         0x008002ca        0x2 EasyPK_AVR.o
+                0x008002ca                led_count
+                0x008002cb                led_toggle_flag
+ COMMON         0x008002cc      0x110 showsettingrect.o
+                0x008002cc                originRightFont
+                0x008002d4                originBottomFonts
+                0x00800354                originTopFonts
+                0x008003d4                originLeftFont
+                0x008003dc                PROVIDE (__bss_end, .)
+                0x000019ac                __data_load_start = LOADADDR (.data)
+                0x00001b42                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x008003dc        0x0
+                0x008003dc                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x008003dc                PROVIDE (__noinit_end, .)
+                0x008003dc                _end = .
+                0x008003dc                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0x1a0
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x20 WatchSetControl.o
+ .debug_aranges
+                0x00000020       0x20 DoorControl.o
+ .debug_aranges
+                0x00000040       0x20 KeyPadRead.o
+ .debug_aranges
+                0x00000060       0x20 Main.o
+ .debug_aranges
+                0x00000080       0x20 Moter.o
+ .debug_aranges
+                0x000000a0       0x20 showtimealarmdiff.o
+ .debug_aranges
+                0x000000c0       0x20 startwatch.o
+ .debug_aranges
+                0x000000e0       0x20 updatewatch.o
+ .debug_aranges
+                0x00000100       0x20 Watch.o
+ .debug_aranges
+                0x00000120       0x20 EasyPK_AVR.o
+ .debug_aranges
+                0x00000140       0x20 eaypkglcd.o
+ .debug_aranges
+                0x00000160       0x20 shownumberandtext.o
+ .debug_aranges
+                0x00000180       0x20 showsettingrect.o
+
+.debug_pubnames
+                0x00000000      0xa03
+ *(.debug_pubnames)
+ .debug_pubnames
+                0x00000000       0x26 WatchSetControl.o
+ .debug_pubnames
+                0x00000026      0x156 DoorControl.o
+ .debug_pubnames
+                0x0000017c       0x65 KeyPadRead.o
+ .debug_pubnames
+                0x000001e1       0x8e Main.o
+ .debug_pubnames
+                0x0000026f       0x5e Moter.o
+ .debug_pubnames
+                0x000002cd       0x85 showtimealarmdiff.o
+ .debug_pubnames
+                0x00000352       0x4e startwatch.o
+ .debug_pubnames
+                0x000003a0       0x4a updatewatch.o
+ .debug_pubnames
+                0x000003ea       0x81 Watch.o
+ .debug_pubnames
+                0x0000046b       0xe9 EasyPK_AVR.o
+ .debug_pubnames
+                0x00000554       0x67 eaypkglcd.o
+ .debug_pubnames
+                0x000005bb      0x2a4 shownumberandtext.o
+ .debug_pubnames
+                0x0000085f      0x1a4 showsettingrect.o
+
+.debug_info     0x00000000     0x233f
+ *(.debug_info)
+ .debug_info    0x00000000       0x78 WatchSetControl.o
+ .debug_info    0x00000078      0x5fe DoorControl.o
+ .debug_info    0x00000676      0x237 KeyPadRead.o
+ .debug_info    0x000008ad      0x1c8 Main.o
+ .debug_info    0x00000a75       0xc9 Moter.o
+ .debug_info    0x00000b3e       0x56 F8X8A.o
+ .debug_info    0x00000b94      0x2c9 showtimealarmdiff.o
+ .debug_info    0x00000e5d      0x17f startwatch.o
+ .debug_info    0x00000fdc      0x166 updatewatch.o
+ .debug_info    0x00001142      0x143 Watch.o
+ .debug_info    0x00001285      0x236 EasyPK_AVR.o
+ .debug_info    0x000014bb      0x27a eaypkglcd.o
+ .debug_info    0x00001735        0x0 graphiclcd.o
+ .debug_info    0x00001735      0x71e shownumberandtext.o
+ .debug_info    0x00001e53      0x4ec showsettingrect.o
+ .debug_info    0x0000233f        0x0 ShowTitle.o
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev   0x00000000      0xc36
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000       0x61 WatchSetControl.o
+ .debug_abbrev  0x00000061      0x1be DoorControl.o
+ .debug_abbrev  0x0000021f       0xf5 KeyPadRead.o
+ .debug_abbrev  0x00000314      0x14b Main.o
+ .debug_abbrev  0x0000045f       0x75 Moter.o
+ .debug_abbrev  0x000004d4       0x4e F8X8A.o
+ .debug_abbrev  0x00000522      0x150 showtimealarmdiff.o
+ .debug_abbrev  0x00000672       0xe8 startwatch.o
+ .debug_abbrev  0x0000075a       0xbd updatewatch.o
+ .debug_abbrev  0x00000817       0xa7 Watch.o
+ .debug_abbrev  0x000008be       0xd1 EasyPK_AVR.o
+ .debug_abbrev  0x0000098f       0xa4 eaypkglcd.o
+ .debug_abbrev  0x00000a33        0x1 graphiclcd.o
+ .debug_abbrev  0x00000a34      0x139 shownumberandtext.o
+ .debug_abbrev  0x00000b6d       0xc8 showsettingrect.o
+ .debug_abbrev  0x00000c35        0x1 ShowTitle.o
+
+.debug_line     0x00000000     0x1c07
+ *(.debug_line)
+ .debug_line    0x00000000       0x66 WatchSetControl.o
+ .debug_line    0x00000066      0x321 DoorControl.o
+ .debug_line    0x00000387      0x1c9 KeyPadRead.o
+ .debug_line    0x00000550      0x164 Main.o
+ .debug_line    0x000006b4      0x115 Moter.o
+ .debug_line    0x000007c9       0x52 F8X8A.o
+ .debug_line    0x0000081b      0x1fb showtimealarmdiff.o
+ .debug_line    0x00000a16      0x13c startwatch.o
+ .debug_line    0x00000b52      0x17f updatewatch.o
+ .debug_line    0x00000cd1      0x104 Watch.o
+ .debug_line    0x00000dd5      0x394 EasyPK_AVR.o
+ .debug_line    0x00001169      0x3d3 eaypkglcd.o
+ .debug_line    0x0000153c       0x24 graphiclcd.o
+ .debug_line    0x00001560      0x360 shownumberandtext.o
+ .debug_line    0x000018c0      0x323 showsettingrect.o
+ .debug_line    0x00001be3       0x24 ShowTitle.o
+
+.debug_frame    0x00000000      0x5f0
+ *(.debug_frame)
+ .debug_frame   0x00000000       0x20 WatchSetControl.o
+ .debug_frame   0x00000020      0x110 DoorControl.o
+ .debug_frame   0x00000130       0x60 KeyPadRead.o
+ .debug_frame   0x00000190       0x60 Main.o
+ .debug_frame   0x000001f0       0x40 Moter.o
+ .debug_frame   0x00000230       0x60 showtimealarmdiff.o
+ .debug_frame   0x00000290       0x40 startwatch.o
+ .debug_frame   0x000002d0       0x40 updatewatch.o
+ .debug_frame   0x00000310       0x40 Watch.o
+ .debug_frame   0x00000350       0xc0 EasyPK_AVR.o
+ .debug_frame   0x00000410       0x60 eaypkglcd.o
+ .debug_frame   0x00000470       0xa0 shownumberandtext.o
+ .debug_frame   0x00000510       0xe0 showsettingrect.o
+
+.debug_str      0x00000000      0xa1d
+ *(.debug_str)
+ .debug_str     0x00000000       0x6f WatchSetControl.o
+                                 0x78 (size before relaxing)
+ .debug_str     0x0000006f      0x1de DoorControl.o
+                                0x281 (size before relaxing)
+ .debug_str     0x0000024d       0x67 KeyPadRead.o
+                                 0xf3 (size before relaxing)
+ .debug_str     0x000002b4       0x5b Main.o
+                                0x11a (size before relaxing)
+ .debug_str     0x0000030f       0x47 Moter.o
+                                 0xe8 (size before relaxing)
+ .debug_str     0x00000356       0x25 F8X8A.o
+                                 0x4c (size before relaxing)
+ .debug_str     0x0000037b       0xac showtimealarmdiff.o
+                                0x1a8 (size before relaxing)
+ .debug_str     0x00000427       0x48 startwatch.o
+                                0x121 (size before relaxing)
+ .debug_str     0x0000046f       0x52 updatewatch.o
+                                0x13e (size before relaxing)
+ .debug_str     0x000004c1       0x46 Watch.o
+                                0x11f (size before relaxing)
+ .debug_str     0x00000507       0xcb EasyPK_AVR.o
+                                0x173 (size before relaxing)
+ .debug_str     0x000005d2       0x85 eaypkglcd.o
+                                 0xd2 (size before relaxing)
+ .debug_str     0x00000657      0x22a shownumberandtext.o
+                                0x32c (size before relaxing)
+ .debug_str     0x00000881      0x19c showsettingrect.o
+                                0x214 (size before relaxing)
+
+.debug_loc      0x00000000     0x1292
+ *(.debug_loc)
+ .debug_loc     0x00000000       0x13 WatchSetControl.o
+ .debug_loc     0x00000013      0x28a DoorControl.o
+ .debug_loc     0x0000029d      0x1ed KeyPadRead.o
+ .debug_loc     0x0000048a       0x6d Main.o
+ .debug_loc     0x000004f7       0xa3 showtimealarmdiff.o
+ .debug_loc     0x0000059a       0x50 startwatch.o
+ .debug_loc     0x000005ea      0x179 EasyPK_AVR.o
+ .debug_loc     0x00000763      0x45b eaypkglcd.o
+ .debug_loc     0x00000bbe      0x1f5 shownumberandtext.o
+ .debug_loc     0x00000db3      0x4df showsettingrect.o
+
+.debug_macinfo
+ *(.debug_macinfo)
+OUTPUT(Project_6_9.elf elf32-avr)
+LOAD linker stubs
+
+.debug_ranges   0x00000000       0x90
+ .debug_ranges  0x00000000       0x90 KeyPadRead.o

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete 24 resources" deleteContents="false" description="Delete 24 resources" element1="/activation" element10="/javamail-1.5.6-src.zip_expanded" element11="/logging" element12="/mail" element13="/mailapi" element14="/mailapijar" element15="/mailhandler" element16="/mbox" element17="/outlook" element18="/parent-distrib" element19="/pop3" element2="/android" element20="/publish" element21="/servlet" element22="/smtp" element23="/taglib" element24="/webapp" element3="/android_mail" element4="/client" element5="/demo" element6="/dsn" element7="/gimap" element8="/imap" element9="/javadoc" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="24" stamp="1529645561708"/>
+</session>

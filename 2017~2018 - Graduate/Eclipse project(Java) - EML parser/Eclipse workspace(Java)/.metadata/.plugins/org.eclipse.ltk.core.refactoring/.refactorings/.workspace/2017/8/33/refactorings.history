@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename Java project &apos;eml 파서&apos; to &apos;eml 파서(GUI)&apos;&#x0D;&#x0A;- Original element: &apos;eml 파서&apos;&#x0D;&#x0A;- Renamed element: &apos;eml 파서&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename Java project &apos;eml 파서&apos;" flags="7" id="org.eclipse.jdt.ui.rename.java.project" input="=eml 파서" name="eml 파서(GUI)" references="true" stamp="1502890758455" version="1.0"/>
+</session>

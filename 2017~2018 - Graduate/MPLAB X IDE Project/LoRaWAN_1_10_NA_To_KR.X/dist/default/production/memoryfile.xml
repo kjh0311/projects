@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  <executable name="dist/default/production\LoRaWAN_1_10_NA_To_KR.X.production.hex">
+    <memory name="program">
+      <units>bytes</units>
+      <length>65536</length>
+      <used>38765</used>
+      <free>26771</free>
+    </memory>
+    <memory name="data">
+      <units>bytes</units>
+      <length>3896</length>
+      <used>2416</used>
+      <free>1480</free>
+    </memory>
+  </executable>
+</project>
