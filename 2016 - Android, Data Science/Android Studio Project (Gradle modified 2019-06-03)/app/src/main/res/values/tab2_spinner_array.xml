@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="option">
+		<item>1일</item>
+		<item>3일</item>
+		<item>5일</item>
+		<item>1주</item>
+		<item>2주</item>
+		<item>한 달</item>
+		<item>1년</item>
+		<item>전체</item>
+	</string-array>
+
+
+	<string-array name="ampm">
+		<item>오전</item>
+		<item>오후</item>
+	</string-array>
+</resources>
