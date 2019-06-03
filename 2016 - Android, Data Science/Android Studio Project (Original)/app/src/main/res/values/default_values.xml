@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-	<string name="default_kcal">100</string>
-	<string name="default_km">5</string>
-	<string name="default_grad">10</string>
-	<string name="default_speed">10</string>
-</resources>
